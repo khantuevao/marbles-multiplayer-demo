@@ -186,12 +186,12 @@ function placeBets() {
     }
 
     const evenOne = document.getElementById("evenOne");
-    const unevenOne = document.getElementById("unevenOne");
+    const oddOne = document.getElementById("oddOne");
 
     if (evenOne.checked === true) {
       playerOne.choice = "even";
-    } else if (unevenOne.checked === true) {
-      playerOne.choice = "uneven";
+    } else if (oddOne.checked === true) {
+      playerOne.choice = "odd";
     } else {
       return;
     }
@@ -221,12 +221,12 @@ function placeBets() {
     }
 
     const evenTwo = document.getElementById("evenTwo");
-    const unevenTwo = document.getElementById("unevenTwo");
+    const oddTwo = document.getElementById("oddTwo");
 
     if (evenTwo.checked === true) {
       playerTwo.choice = "even";
-    } else if (unevenTwo.checked === true) {
-      playerTwo.choice = "uneven";
+    } else if (oddTwo.checked === true) {
+      playerTwo.choice = "odd";
     } else {
       return;
     }
@@ -271,4 +271,12 @@ function resolveTurn() {
       outcome = "has not been figured out";
     }
   }
+}
+
+
+
+
+
+function fib(n) {
+  return n <= 1? n : fib(n-1) + fib(n -2);
 }
