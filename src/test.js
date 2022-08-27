@@ -316,6 +316,7 @@ function reRenderMarbles() {
     for (let i = 0; i < diff; i++) {
       marblePiecesOne[i + playerOne.score].classList.remove('big')
       marblePiecesOne[i + playerOne.score].classList.add('small')
+
     }
   }
 
@@ -332,6 +333,7 @@ function reRenderMarbles() {
     for (let i = 0; i < diff; i++) {
       marblePiecesTwo[i + playerTwo.score].classList.remove('big')
       marblePiecesTwo[i + playerTwo.score].classList.add('small')
+
     }
   }
 }
