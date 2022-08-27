@@ -84,6 +84,13 @@ function playRound() {
     announcements.innerHTML = `<p><strong>${roundWinner}</strong> ${outcome} and won <strong>${wonAmount} marbles.</strong></p>
                                  <h3>Game over</h3>
                                  <p>${roundWinner} is the winner</p>`;
+    const newGame = document.createElement('button');
+    newGame.innerHTML = 'New Game';
+    newGame.classList.add('newGame')
+    betForm.appendChild(newGame)
+    newGame.addEventListener('click', () => {
+      window.location.reload();
+    })
   } else {
     //default
     reRenderMarbles();
@@ -194,7 +201,6 @@ function placeBets() {
     } else {
       playerTwo.bet = aiBet(1, playerTwo.score)
     }
-    playerTwo.bet = aiBet(1, playerTwo.score)
 
     function aiChoice() {
       let result;

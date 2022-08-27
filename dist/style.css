@@ -33,6 +33,11 @@ body {
   visibility: hidden;
 }
 
+.newGame {
+  visibility: visible;
+  margin-bottom: 8rem;
+}
+
 #playerOne, #playerTwo {
   height: 10%;
   border: 1px solid black;
